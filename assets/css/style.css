@@ -119,12 +119,12 @@ footer a {
 	padding: 0px 4px;
 	font-size: small;
 	color: #757575!important;
-	transition: 0.5s;
+	transition: 500ms;
 }
 
 footer a:hover {
 	color: white!important;
-	transition: 0.5s;
+	transition: 500ms;
 }
 
 footer .lang {
