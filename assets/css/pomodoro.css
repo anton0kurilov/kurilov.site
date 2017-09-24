@@ -1,0 +1,148 @@
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	min-height: 100vh;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 100%;
+	font-weight: 400;
+	background-color: #212121;
+	color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	font-weight: normal;
+}
+
+main {
+	z-index: 1;
+	text-align: center;
+	width: 300px;
+	height: 230px;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin-top: -110px;
+	margin-right: -140px;
+}
+
+*:focus {
+	outline: 0 none;
+}
+
+.wrapper #note {
+	color: #999;
+	font-size: 0.8em;
+}
+
+.is-blured {
+	filter: blur(5px);
+}
+
+h1 {
+	color: #fff;
+	font-weight: 400;
+	font-size: 250%;
+	text-shadow: 1px 3px 0 #a32;
+	margin-bottom: 10px;
+}
+
+.time {
+	font-size: 5em;
+	font-weight: 600;
+	color: #933;
+	letter-spacing: -5px;
+}
+
+.active-break {
+	background-color: #47cf73;
+}
+
+.active-break h1 {
+	text-shadow: 1px 3px 0 #278c47;
+}
+
+.active-break .time {
+	color: #278c47;
+}
+
+.active-break .controls a {
+	text-shadow: 1px 3px 0 #278c47;
+}
+
+.controls {
+	margin-top: 1em;
+}
+
+.controls a {
+	font-size: 1.5em;
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 50%;
+	text-decoration: none;
+	transition: 700ms;
+}
+
+.controls a:hover {
+	background-color: #181818;
+	transition: 700ms;
+}
+
+.settings-wrapper {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 9999;
+}
+
+.settings {
+	background-color: #fff;
+	padding: 2em 3em 1em;
+}
+
+.settings label {
+	display: inline-block;
+	font-size: 0.8em;
+	color: #888;
+	text-align: center;
+}
+
+.settings label:first-child {
+	margin-right: 2em;
+}
+
+.settings input {
+	display: block;
+	width: 1.5em;
+	padding: 0.2em;
+	font-size: 3em;
+	text-align: center;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #333;
+}
+
+.settings p {
+	display: none;
+	text-align: center;
+	font-size: 12px;
+	margin: 1.4em 0 0;
+	color: #933;
+}
+
+#apply {
+	display: block;
+	font-size: 0.8em;
+	margin-top: 1em;
+	text-align: center;
+	color: #333;
+}
