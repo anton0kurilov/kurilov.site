@@ -148,3 +148,16 @@ footer .lang {
 		padding: 5px!important;
 	}
 }
+
+@media (max-width: 500px) {
+	main {
+		width: 300px!important;
+		margin-right: -150px!important;
+	}
+	h1 {
+		font-size: 200%!important;
+	}
+	.contacts span {
+		padding: 5px!important;
+	}
+}
