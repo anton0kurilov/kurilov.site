@@ -127,13 +127,6 @@ footer a:hover {
 	transition: 500ms;
 }
 
-footer .lang {
-	color: white!important;
-	padding: 12.5px 10px;
-	background-color: #00ADB5;
-}
-
-
 /*-- MOBILE OPTIMIZATION --*/
 
 @media (max-width: 500px) {
