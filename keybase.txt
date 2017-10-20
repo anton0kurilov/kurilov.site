@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/anton0kurilov
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kurilov.site
+  * I am anton0kurilov (https://keybase.io/anton0kurilov) on keybase.
+  * I have a public key with fingerprint 1E0A F1D0 6A32 5253 0F7C  5E2B A15F F3B9 A690 CFC7
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010171942a4ba584442060acbdf05f1afd7a0e591e44f30788ec6fbf369de248b0c50a",
+      "fingerprint": "1e0af1d06a3252530f7c5e2ba15ff3b9a690cfc7",
+      "host": "keybase.io",
+      "key_id": "a15ff3b9a690cfc7",
+      "kid": "010171942a4ba584442060acbdf05f1afd7a0e591e44f30788ec6fbf369de248b0c50a",
+      "uid": "1bbb3677bf56de87ca71d5f206afd019",
+      "username": "anton0kurilov"
+    },
+    "service": {
+      "hostname": "kurilov.site",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1508521434,
+  "expire_in": 157680000,
+  "prev": "00c06e2c74d52e03bf405109a2a7a8452ed17e99177fa5e17885d9ed55961034",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMInAnicrVJbbA1BGN6jbq2gHpAmErpEhTpmdmf2coiEuoSHBqmcuCTH7O5Mu9ru
+Hnv2HD2hUY20DQ+i4lq3hgcRodJQlDgtjSLSJiSCSEgTQfogUaJImW3qzaN5mcz/
+f9/3f/+XeTAxS8gJjWv7tnnK2qGi0JOOU0lh0yf8apdouFZajOwSy+nwRSssmvBj
+5bYlRkQAAVShjiSCDII1hJAEFEBMw2IAM0iYpRJAsQ4pQkwGqqZRU2EGkxXdohLS
+DGBiQMRCkdlOKfXinu34XBZSQBi0gEJkCUtYBkw1MZUMAjFjsqETRQcmM1VOLHMT
+AYObM0iChm2X1/gjNmzvH/j/7Ds5LAcNw5AVVTUYViyqqSZRoYUZ1+RKAOoBMEE9
+h1TSwJXjuw4oT3p2hZsSqwtF3krZJg3SDdYZgY0Awgnbp1wg7rm+a7oVvFPm+/FE
+JGD66XgA3UmN2IhIzLAdi4fJGSnqJWzXESOQI03fDlQhBhqWIJJRoUir4rZHY3aA
+wKqiAX6COTQVJARMoFDJVJGFJQpkgyGAIdCJRFSiIV6zoEp1HaoqI5hCHhG2dGph
+rCsQyEgM1trhuGKET/JJKZdM2KUO8ZMeFas7M1tHC6EcYeyYUcEnE3Kyc/9+vdlV
+44XWn0fTz0+i+2P7nzWR1dErg/VnLtxu37Kxd2Dz+e9ptKhZu6H3zM3dM/SurfH4
+xa7TwqfUJj9z9sfL3WSo5lGquwAVbL1WsOygNLOv+DnekEmvvvsY7txHZk2qex1t
+uDn1SNf6hujKwTnv88ySLV9vFYHu6SuWTqtlTbmv6fXDxds/PC3tebOta3kUZtYf
+y28OVzuhaF1+iV71It2K1nTeCX/JDv+4VL+xuEVoyxssW9D7cErXXnCoEZ7LJGt9
+70Bo8dfGvhnbP9+72tp0+WdJ+eT5vb+d/esWr+q/8WVC99vwhAFrYX9ReGnWiXah
+5cq3yoHkg/s3Wxtq8pf8KvrYMc/5Az+rRnw=
+=rZd/
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/anton0kurilov
+
+==================================================================
