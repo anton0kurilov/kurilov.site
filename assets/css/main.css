@@ -1,16 +1,15 @@
-/*-- MAIN TAGS --*/
+/*-- GENERAL TAGS --*/
 
-html,
 body {
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	height: 100%;
-	font-family: 'Roboto Mono', monospace;
-	font-size: 100%;
-	font-weight: 300;
-	background-color: #f5f5f5;
-	color: black;
+	min-height: 100vh;
+	background-color: #F5F6FA;
+	color: rgba(0, 0, 0, 0.87);
+	font-size: 17px;
+	font-family: 'Product Sans', sans-serif;
+	font-weight: 400;
 }
 
 a,
@@ -25,73 +24,26 @@ h2,
 h3,
 h4,
 h5 {
+	font-weight: 400;
 	margin: 0;
-	font-weight: 300;
 }
 
-h1 {
-	text-align: center;
-	font-size: 250%!important;
-	cursor: default;
+a {
+	text-decoration: none!important;
+	color: #212121;
 }
 
-h5 {
-	text-align: center;
-	font-size: 120%;
-	color: #616161;
-	cursor: default;
-}
 
-header {
-	width: 100%;
-	height: 50%;
-	top: 0;
-	background-color: #3f51b5;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
+/*-- MAIN TAGS --*/
 
 main {
-	width: 700px;
-	height: 410px;
-	top: 50%;
-	right: 50%;
-	margin-top: -205px;
-	margin-right: -350px;
-	position: absolute;
+	margin-top: 12%;
 }
 
-
-/*-- BODY --*/
-
-.name,
-.contacts {
-	background-color: white;
-	border-radius: 2px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	padding: 30px 0px;
-	margin: 0;
-}
-
-.contacts {
-	margin-top: 8px;
-	text-align: center;
-}
-
-.contacts span {
-	padding: 10px;
-	border-radius: 30px;
-	transition: 500ms;
-}
-
-.contacts span:hover {
-	background-color: #e6e6e6;
-	transition: 500ms;
-}
-
-.photo {
-	width: 150px;
-	height: 150px;
-	border-radius: 150px;
+main .photo {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
 	background-image: url(/assets/img/photo.jpg);
 	text-align: center;
 	object-fit: cover;
@@ -99,60 +51,185 @@ main {
 	background-size: cover;
 	margin: 0px auto 0px auto;
 	cursor: default;
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
-	0 1px 18px 0 rgba(0, 0, 0, 0.12),
-	0 3px 5px -1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
 }
 
+main h1,
+main h3 {
+	cursor: default;
+	text-align: center;
+}
 
-/*-- FOOTER --*/
+main h1 {
+	font-size: 2.5em;
+	margin: 10px 0px -10px 0px;
+}
 
-footer {
+main h3 {
+	color: #777;
+	margin: 0;
+	padding: 0;
+}
+
+main .social {
+	margin-top: 15px;
+	text-align: center;
+}
+
+main .social a {
+	font-size: 17px;
+	font-weight: 600;
+	color: #212121;
+	border-radius: 2px;
+	padding: 5px 8px;
+	margin: 0px 5px;
+	text-decoration: none;
+	transition: .3s ease-out;
+}
+
+main .social a:hover {
+	background-color: lightgrey;
+	transition: .3s ease-out;
+}
+
+main .buttons {
+	display: flex;
+	justify-content: center;
+}
+
+main .buttons .contactme {
+	padding: 8px 15px;
+	width: 110px;
+	margin: 20px 5px;
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid rgba(0, 0, 0, 0.87);
+	border-radius: 25px;
+	background-color: transparent;
+	color: #212121;
+	font-size: 0.9em;
+	font-weight: 700;
+	transition: .3s ease-out;
+}
+
+main .buttons .contactme:hover {
+	background-color: rgba(0, 0, 0, 0.87);
+	color: white;
+	transition: .3s ease-out;
+}
+
+/*-- PORTFOLIO TAGS --*/
+
+.asidefather {
 	width: 100%;
-	height: 40px;
-	line-height: 40px;
-	text-align: right;
-	background-color: #212121;
-	position: fixed;
-	bottom: 0;
+	padding: 25px 0px;
+	background-color: #fff;
 }
 
-footer a {
-	padding: 0px 4px;
-	font-size: small;
-	color: #757575!important;
-	transition: 500ms;
+aside {
+	width: 70%;
+	margin: 0 auto;
 }
 
-footer a:hover {
-	color: white!important;
-	transition: 500ms;
+aside h2 {
+	font-size: 2em;
+}
+
+aside .row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row nowrap;
+	margin: 1em 0em;
+}
+
+aside .card {
+	width: 100%;
+	margin: 0em 1em 0em 0em;
+	background-color: #fff;
+	transition: box-shadow .25s;
+	border-radius: 2px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+aside .card:hover {
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+aside .card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 2px 2px 0px 0px;
+}
+
+aside .card .about {
+	padding: 5px 20px 15px 20px;
+}
+
+aside .card .about h3 {
+	font-size: 1.8em;
+	margin: 0;
+	font-weight: 300;
 }
 
 /*-- MOBILE OPTIMIZATION --*/
 
-@media (max-width: 500px) {
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+	main,
+	aside {
+		width: 750px;
+	}
 	main {
-		width: 320px!important;
-		margin-right: -160px!important;
+		margin: 10% auto 0 auto;
 	}
-	h1 {
-		font-size: 200%!important;
-	}
-	.contacts span {
-		padding: 5px!important;
+	aside .card .about h3 {
+		font-size: 1.4em;
 	}
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 800px) {
+	main,
+	aside {
+		width: 80%;
+	}
 	main {
-		width: 300px!important;
-		margin-right: -150px!important;
+		margin: 10% auto 0 auto;
 	}
-	h1 {
-		font-size: 200%!important;
+	main .social a {
+		margin: 0;
 	}
-	.contacts span {
-		padding: 5px!important;
+	aside {
+		padding: 0;
+	}
+	aside h2 {
+		margin-bottom: 0.4em;
+	}
+	aside .row {
+		flex-direction: column;
+		margin: 0em;
+	}
+	aside .card {
+		margin: 0em 0em 1em 0em;
+	}
+	aside .card img {
+		height: 170px;
+	}
+	aside .card .about h3 {
+		font-size: 1.3em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	main,
+	aside {
+		width: 90%;
+	}
+	main .social a {
+		font-size: 14px;
+		padding: 5px 6px;
+	}
+	aside .card img {
+		height: 130px;
 	}
 }
