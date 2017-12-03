@@ -173,6 +173,20 @@ aside .card .about h3 {
 	font-weight: 300;
 }
 
+aside .card .forlive {
+	display: flex;
+	align-items: center;
+}
+
+aside .card .about .live {
+	background-color: #EF4836;
+	color: white;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 0.7em;
+	margin-left: 8px;
+}
+
 /*-- MOBILE OPTIMIZATION --*/
 
 @media screen and (min-width: 800px) and (max-width: 1100px) {
@@ -226,7 +240,7 @@ aside .card .about h3 {
 		width: 90%;
 	}
 	main .social a {
-		font-size: 14px;
+		font-size: 15px;
 		padding: 5px 6px;
 	}
 	aside .card img {
