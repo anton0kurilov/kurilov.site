@@ -1,3 +1,2 @@
 User-agent: *
-Host: www.kurilov.site
 Crawl-delay: 10
