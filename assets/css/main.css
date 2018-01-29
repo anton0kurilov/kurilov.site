@@ -94,7 +94,8 @@ main .social .button {
 	margin: 0px 2.5px;
 }
 
-main .social .fa {
+main .social .fab,
+main .social .fas {
 	width: 40px;
 	height: 100%;
 	display: flex;
