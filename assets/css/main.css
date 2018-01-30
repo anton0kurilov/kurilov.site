@@ -140,3 +140,9 @@ main .social .na:hover {
 		font-size: 0.95em;
 	}
 }
+
+@media screen and (orientation: landscape) and (max-width: 500px) {
+	.photo {
+		display: none;
+	}
+}
