@@ -123,6 +123,8 @@ main .social .na:hover {
 	background-color: rgba(0, 0, 0, .3);
 }
 
+/*-- MOBILE OPTIMIZATIONS --*/
+
 @media screen and (max-width: 710px) {
 	main .social {
 		flex-direction: column;
