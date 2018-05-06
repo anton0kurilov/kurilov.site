@@ -84,7 +84,7 @@ main .social .flex {
 	align-items: center;
 }
 
-main .social .button {
+main .social .link {
 	display: flex;
 	align-items: center;
 	color: #303030;
@@ -94,8 +94,7 @@ main .social .button {
 	margin: 0 2.5px;
 }
 
-main .social .fab,
-main .social .fas {
+main .social .link-icon {
 	width: 40px;
 	height: 100%;
 	display: flex;
@@ -106,7 +105,7 @@ main .social .fas {
 	background-color: rgba(0, 0, 0, .3);
 }
 
-main .social .na {
+main .social .link-title {
 	width: 130px;
 	height: 100%;
 	display: flex;
@@ -136,10 +135,10 @@ main .social .na:hover {
 }
 
 @media screen and (max-width: 360px) {
-	main .social .button {
+	main .social .link {
 		width: 150px;
 	}
-	main .social .na {
+	main .social .link-title {
 		font-size: .95em;
 	}
 }
