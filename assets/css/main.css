@@ -119,7 +119,7 @@ main .social .link-title {
 	transition: all .3s;
 }
 
-main .social .na:hover {
+main .social .link-title:hover {
 	background-color: rgba(0, 0, 0, .3);
 }
 
