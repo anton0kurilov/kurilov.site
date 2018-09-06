@@ -1,7 +1,6 @@
 {
-    "name": "Anton Kurilov",
-    "icons": [
-        {
+    "name": "Антон Курилов",
+    "icons": [{
             "src": "assets/img/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
