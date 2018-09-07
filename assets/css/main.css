@@ -1,5 +1,4 @@
 /*-- GENERAL TAGS --*/
-
 html {
 	width: 100%;
 	height: 100%;
@@ -19,6 +18,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	opacity: 0;
+	animation: fadeIn ease-in 1;
+	animation-fill-mode: forwards;
+	animation-duration: .7s;
+	animation-delay: .3s;
 }
 
 a,
@@ -37,7 +41,6 @@ h5 {
 }
 
 /*-- MAIN TAGS --*/
-
 main {
 	text-align: center;
 }
@@ -124,11 +127,11 @@ main .social .link-title:hover {
 }
 
 /*-- MOBILE OPTIMIZATIONS --*/
-
 @media screen and (max-width: 710px) {
 	main .social {
 		flex-direction: column;
 	}
+
 	main .social .margin {
 		margin-top: 5px;
 	}
@@ -138,6 +141,7 @@ main .social .link-title:hover {
 	main .social .link {
 		width: 150px;
 	}
+
 	main .social .link-title {
 		font-size: .95em;
 	}
@@ -146,5 +150,16 @@ main .social .link-title:hover {
 @media screen and (orientation: landscape) and (max-width: 500px) {
 	.photo {
 		display: none;
+	}
+}
+
+/*-- ANIMATIONS TAGS --*/
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
 	}
 }
