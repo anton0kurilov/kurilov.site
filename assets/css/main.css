@@ -111,6 +111,7 @@ main .social .link-icon {
 	color: white;
 	font-size: 1.3em;
 	background-color: rgba(0, 0, 0, .3);
+	border-radius: 2px 0 0 2px;
 }
 
 main .social .link-title {
@@ -125,6 +126,7 @@ main .social .link-title {
 	font-style: normal;
 	font-weight: 600;
 	transition: all .3s;
+	border-radius: 0 2px 2px 0;
 }
 
 main .social .link-title:hover {
