@@ -29,6 +29,8 @@
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-sass": "^4.0.2",
-    "gulp-uglifyjs": "^0.6.2"
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.8",
+    "vinyl-ftp": "^0.6.1"
   }
 }

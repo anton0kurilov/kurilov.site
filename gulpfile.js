@@ -3,7 +3,9 @@ var gulp = require('gulp'),
     cleancss = require('gulp-clean-css'),
     autoprefixer = require('gulp-autoprefixer'),
     del = require('del'),
-    uglify = require('gulp-uglifyjs');
+    uglify = require('gulp-uglifyjs'),
+    gutil = require('gulp-util'),
+    ftp = require('vinyl-ftp');
 
 var urlscss = 'app/scss/**/*.scss',
     urlcss = 'app/css/**/*.css',
@@ -69,6 +71,27 @@ gulp.task('build', gulp.series('clean', 'sass', 'scripts', function (done) {
     done();
 }));
 
+// DEPLOY
+gulp.task('deploy', function () {
+    var ftpdata = require('./app/config/ftpdata.json');
+    var conn = ftp.create({
+        host: ftpdata.host,
+        user: ftpdata.user,
+        password: ftpdata.pass,
+        parallel: 10,
+        log: gutil.log
+    });
+    var globs = [
+        'public_html/**'
+    ];
+    return gulp.src(globs, {
+            base: '.',
+            buffer: false
+        })
+        .pipe(conn.newer('/'))
+        .pipe(conn.dest('/'));
+
+});
 
 // DEFAULT TASK
 gulp.task('default', gulp.series('watch'));
