@@ -1,6 +1,6 @@
 {
   "name": "kurilov.site",
-  "version": "3.3.0",
+  "version": "3.3.5",
   "description": "Anton Kurilov's personal website",
   "main": "index.js",
   "scripts": {
@@ -21,13 +21,13 @@
     "url": "https://github.com/anton0kurilov/kurilov.site/issues"
   },
   "homepage": "https://github.com/anton0kurilov/kurilov.site#readme",
-  "dependencies": {
-    "gulp": "^4.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "del": "^3.0.0",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
     "gulp-uglifyjs": "^0.6.2",
     "gulp-util": "^3.0.8",
