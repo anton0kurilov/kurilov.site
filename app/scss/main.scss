@@ -52,7 +52,7 @@ main {
             width: 140px;
             height: 140px;
             border-radius: 50%;
-            background-image: url(/assets/img/photomin.jpg);
+            background-image: url(/app/img/photomin.jpg);
             text-align: center;
             object-fit: cover;
             background-repeat: no-repeat;
@@ -62,14 +62,15 @@ main {
             box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .3);
         }
 
-        h1 {
+        h1.title {
             font-size: 2.8em;
             margin-top: 10px;
         }
 
-        h3 {
+        h3.subtitle {
             color: #999;
-            font-weight: 400;
+            font-weight: 300;
+            margin-top: 5px;
         }
     }
 
