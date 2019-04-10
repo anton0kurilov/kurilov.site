@@ -2,10 +2,6 @@
   "name": "kurilov.site",
   "version": "3.3.5",
   "description": "Anton Kurilov's personal website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anton0kurilov/kurilov.site.git"
