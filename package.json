@@ -16,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/anton0kurilov/kurilov.site/issues"
   },
+  "private": true,
   "homepage": "https://github.com/anton0kurilov/kurilov.site#readme",
   "dependencies": {},
   "devDependencies": {
