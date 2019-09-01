@@ -52,19 +52,19 @@ main {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            background-image: url(/app/img/photo.jpeg);
+            background-image: url(/app/img/photo.min.jpg);
             text-align: center;
             object-fit: cover;
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0 auto;
             cursor: default;
-            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .3);
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .3);
         }
 
         h1.title {
             font-size: 2.8em;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         h3.subtitle {
