@@ -145,20 +145,23 @@ main {
 
 /*-- MOBILE OPTIMIZATIONS --*/
 @media screen and (max-width: 710px) {
-    main .social {
-        flex-direction: column;
+    main {
+        .social {
+            .link {
+                .link-icon-embedded {
+                    border-radius: 4px;
+                    margin: 0px 3px;
+                }
 
-        .margin {
-            margin-top: 5px;
+                .email {
+                    display: none !important;
+                }
+            }
         }
     }
 }
 
 @media screen and (max-width: 360px) {
-    main .social .link {
-        width: 150px;
-    }
-
     main .social .link-title {
         font-size: .95em;
     }
