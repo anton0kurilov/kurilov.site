@@ -1,3 +1,7 @@
+/*-- VAR --*/
+
+$wh-icons: 45px;
+
 /*-- GENERAL TAGS --*/
 html {
     width: 100%;
@@ -75,47 +79,52 @@ main {
     }
 
     .social {
-        margin: 1.5em 0;
+        margin: 1em auto;
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         opacity: 0;
         animation: fadeIn ease-in 1;
         animation-fill-mode: forwards;
         animation-duration: .5s;
         animation-delay: .5s;
+    }
 
-        .flex {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
+    .link {
+        display: flex;
 
-        .link {
-            display: flex;
-            align-items: center;
-            color: #303030;
-            text-decoration: none;
-            width: 170px;
-            height: 40px;
-            margin: 0 2.5px;
+        .link-icon,
+        .link-icon-embedded {
+            width: $wh-icons;
+            height: $wh-icons;
+            line-height: $wh-icons;
+            background-color: rgba(0, 0, 0, .15);
+            color: #eee;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: all .3s;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, .3);
+            }
         }
 
         .link-icon {
-            width: 40px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.3em;
-            background-color: rgba(0, 0, 0, .3);
-            border-radius: 2px 0 0 2px;
+            margin: 0 3px;
+            border-radius: 4px;
+        }
+
+        .link-icon-embedded {
+            margin: 0 0 0 3px;
+            border-radius: 4px 0 0 4px;
         }
 
         .link-title {
             width: 130px;
-            height: 100%;
+            height: $wh-icons;
+            padding: 0 12px;
+            margin: 0 3px 0 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -125,7 +134,7 @@ main {
             font-style: normal;
             font-weight: 600;
             transition: all .3s;
-            border-radius: 0 2px 2px 0;
+            border-radius: 0 4px 4px 0;
 
             &:hover {
                 background-color: rgba(0, 0, 0, .3);
