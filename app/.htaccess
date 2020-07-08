@@ -1,0 +1,3 @@
+RewriteEngine on 
+RewriteCond %{HTTP_HOST} ^159\.69\.158\.59
+RewriteRule (.*) https://kurilov.site/$1 [R=301,L]

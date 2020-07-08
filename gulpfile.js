@@ -12,7 +12,10 @@ var urlscss = 'app/scss/**/*.scss',
     urljs = 'app/js/**/*.js',
     urlfonts = 'app/fonts/**/*',
     urlimg = 'app/img/**/*',
-    urlhtml = 'app/*.html',
+    urlhtml = [
+        'app/*.html',
+        'app/.htaccess'
+    ],
     urlbackend = 'app/backend/**/*.*',
     urlmove = [
         urlbackend,
@@ -55,8 +58,8 @@ gulp.task('clean', function (done) {
 gulp.task('move', function (done) {
     // backend and assets
     gulp.src(urlmove, {
-        base: './'
-    })
+            base: './'
+        })
         .pipe(gulp.dest('public_html'));
     // html
     gulp.src(urlhtml)
@@ -81,9 +84,9 @@ gulp.task('deploy', function () {
         'public_html/**'
     ];
     return gulp.src(globs, {
-        base: './',
-        buffer: false
-    })
+            base: './',
+            buffer: false
+        })
         .pipe(conn.newer('/'))
         .pipe(conn.dest('/'));
 });

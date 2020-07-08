@@ -1,6 +1,6 @@
 /*-- VAR --*/
 
-$wh-icons: 45px;
+$wh-icons: 50px;
 
 /*-- GENERAL TAGS --*/
 html {
@@ -14,9 +14,9 @@ body {
     margin: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(33, 33, 33, 1);
+    background-color: rgba(0, 0, 0, 1);
     color: white;
-    font-family: 'Product Sans', 'Roboto', sans-serif;
+    font-family: 'Ubuntu', 'Roboto', Arial, sans-serif;
     font-size: 1em;
     font-weight: 400;
     display: flex;
@@ -45,41 +45,23 @@ main {
 
     .iam {
         cursor: default;
-        padding: 5px 10px;
+        padding: 0 10px;
         opacity: 0;
         animation: fadeIn ease-in 1;
         animation-fill-mode: forwards;
         animation-duration: .5s;
         animation-delay: .2s;
 
-        .photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-image: url(/app/img/photo.min.jpg);
-            text-align: center;
-            object-fit: cover;
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin: 0 auto;
-            cursor: default;
-            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .3);
-        }
-
         h1.title {
-            font-size: 2.8em;
-            margin-top: 20px;
-        }
-
-        h3.subtitle {
-            color: #999;
-            font-weight: 300;
-            margin-top: 5px;
+            font-size: 5em;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
         }
     }
 
     .social {
-        margin: 1em auto;
+        margin: 1.5em auto 0 auto;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -94,19 +76,18 @@ main {
     .link {
         display: flex;
 
-        .link-icon,
-        .link-icon-embedded {
+        .link-icon {
             width: $wh-icons;
             height: $wh-icons;
             line-height: $wh-icons;
-            background-color: rgba(0, 0, 0, .15);
+            background-color: rgba(15, 15, 15, 1);
             color: #eee;
-            font-size: 1.2em;
+            font-size: 1.5em;
             font-weight: 600;
             transition: all .3s;
 
             &:hover {
-                background-color: rgba(0, 0, 0, .3);
+                background-color: rgba(10, 10, 10, 1);
             }
         }
 
@@ -114,66 +95,20 @@ main {
             margin: 0 3px;
             border-radius: 4px;
         }
-
-        .link-icon-embedded {
-            margin: 0 0 0 3px;
-            border-radius: 4px 0 0 4px;
-        }
-
-        .link-title {
-            width: 130px;
-            height: $wh-icons;
-            padding: 0 12px;
-            margin: 0 3px 0 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, .15);
-            color: #eee;
-            font-size: 1.05em;
-            font-style: normal;
-            font-weight: 600;
-            transition: all .3s;
-            border-radius: 0 4px 4px 0;
-
-            &:hover {
-                background-color: rgba(0, 0, 0, .3);
-            }
-        }
-    }
-}
-
-/*-- MOBILE OPTIMIZATIONS --*/
-@media screen and (max-width: 710px) {
-    main {
-        .social {
-            .link {
-                .link-icon-embedded {
-                    border-radius: 4px;
-                    margin: 0px 3px;
-                }
-
-                .email {
-                    display: none !important;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 360px) {
-    main .social .link-title {
-        font-size: .95em;
-    }
-}
-
-@media screen and (orientation: landscape) and (max-width: 500px) {
-    .photo {
-        display: none;
     }
 }
 
 /*-- ANIMATIONS TAGS --*/
+@media screen and (max-width: 900px) {
+    main {
+        .iam {
+            h1.title {
+                font-size: 3em;
+            }
+        }
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
